@@ -194,7 +194,13 @@ main {
   border-radius: 50%;
   overflow: hidden;
 }
-
+/* ここに修正コードを追加 */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
 /* 背景画像の初期設定（非表示） */
 .img-container .background-img {
   position: absolute;
