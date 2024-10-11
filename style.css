@@ -185,20 +185,6 @@ main {
 }
 
 /* 画像コンテナのスタイル */
-<<<<<<< HEAD
-.image-container {
-  text-align: center;
-  margin-top: 20px;
-  margin-bottom: 20px; /* 下にも余白を追加 */
-}
-
-/* 画像のスタイル */
-.growth-chart {
-  max-width: 100%; /* コンテナ内での最大幅を100%に設定 */
-  height: auto; /* 自動で高さを調整 */
-  border-radius: 8px; /* 画像の角を丸くする */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 軽い影を付ける */
-=======
 .img-container {
   position: relative;
   display: inline-block;
@@ -256,7 +242,6 @@ main {
 
 .back-to-top-button:hover {
   background-color: #00bfff; /* ホバー時に色を変更 */
->>>>>>> bb12101 (サブコンテンツの追加)
 }
 
 /* モバイル向けのスタイル調整 */
