@@ -22,23 +22,49 @@ body {
 /* タイトル */
 .title-wrapper {
   text-align: center;
-  padding: 100px 0; /* タイトルとボックスの距離を少し縮める */
+  padding: 50px 0; /* タイトルとメインコンテンツの距離を縮める */
 }
 
 .title-wrapper h1 {
-  font-size: 2.5rem;
+  font-size: 6rem; /* タイトルをさらに大きく */
   color: #fff;
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
-  font-weight: 500;
+  text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5); /* 影を強調 */
+  font-family: "Press Start 2P", cursive; /* ドット風フォントを使用 */
+  font-weight: 700;
+  animation: slide-in 1s ease-out forwards;
 }
 
 /* サブタイトルのスタイル */
 .subtitle {
-  font-size: 1.5rem;
-  color: #fff;
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
-  margin-top: 10px;
-  font-weight: 400;
+  font-size: 3rem; /* サブタイトルもさらに大きく */
+  color: #f0f8ff;
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5); /* 影を強調 */
+  margin-top: 20px;
+  font-family: "Press Start 2P", cursive; /* ドット風フォントを使用 */
+  font-weight: 600;
+  animation: fade-in 1.5s ease-out forwards;
+}
+
+/* スライドインアニメーション */
+@keyframes slide-in {
+  from {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* フェードインアニメーション */
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 /* メインコンテンツ */
@@ -96,6 +122,23 @@ main {
   font-size: 1rem;
   color: #555;
   text-align: right;
+}
+/* メインコンテンツ全体のスペース調整 */
+
+/* インタビュータイトル（h3）とその後の段落（p）の間隔を40px空ける */
+.interview-content h3 {
+  margin-bottom: 40px; /* 小タイトルの下に40pxのスペースを追加 */
+}
+
+.interview-content p {
+  margin-top: 40px; /* 段落の上に40pxのスペースを追加 */
+  margin-bottom: 40px; /* 段落の下にも40pxのスペースを追加 */
+}
+
+/* 引用文（blockquote）の上下にもスペースを追加（必要に応じて） */
+.interview-content blockquote {
+  margin-top: 40px; /* 引用文の上に40pxのスペースを追加 */
+  margin-bottom: 40px; /* 引用文の下にも40pxのスペースを追加 */
 }
 
 /* ボタンのスタイル */
@@ -256,4 +299,13 @@ img {
     max-width: 100%; /* モバイルでは100%の幅を保つ */
     margin: 0 auto; /* モバイルで中央に表示 */
   }
+}
+/* h3とその後のpタグの間にスペースを追加 */
+.content-section h3 {
+  margin-bottom: 20px; /* h3の下に20pxのスペースを追加 */
+}
+
+.content-section p {
+  margin-top: 20px; /* pタグの上に20pxのスペースを追加 */
+  margin-bottom: 30px; /* pタグの下にも20pxのスペースを追加 */
 }
