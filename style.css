@@ -119,13 +119,13 @@ main {
   margin: 0 0 10px 0;
 }
 
-/* インタビュー名のスタイル調整（距離を縮める） */
+/* インタビュー名と次のタイトルの間にスペースを追加 */
 .interview-content .interviewer {
   font-size: 1rem;
   color: #555;
   text-align: right;
-  margin-top: 5px; /* 上のマージンをさらに減らす */
-  margin-bottom: 0; /* 下のマージンを完全に削除 */
+  margin-top: 10px;
+  margin-bottom: 80px; /* 下に50pxのスペースを追加 */
 }
 
 /* メインコンテンツ全体のスペース調整 */
