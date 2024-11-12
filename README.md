@@ -15,9 +15,7 @@ GitHub Pages：WEBサイトをホスティングし、アクセスを簡便に�
 インストールとセットアップ
 このリポジトリをクローンします。
 
-コードをコピーする
-git clone https://github.com/arutan400/pamphlet-website.git
-index.htmlをブラウザで開くことでローカルで確認できます。
+ホームページURL:https://arutan400.github.io/Particle-Effects/
 
 ディレクトリ構成
 
